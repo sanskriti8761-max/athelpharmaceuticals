@@ -1,0 +1,124 @@
+/*
+ * ATHEL DESIGN TOKENS
+ * Colours are sampled from the Athel logo in the visual-aid PDF:
+ *   wordmark teal  #01a19f      "Pharmaceutical" orange  #e8872b
+ *   molecule: lime #a9c532  ->  amber #e5a323  ->  orange, green node #7db93b
+ * Change a value here and the whole site follows.
+ */
+:root {
+  /* brand */
+  --teal: #01a19f;
+  --teal-deep: #02716f;
+  --forest: #0a3d3a;
+  --forest-deep: #062624;
+  --lime: #a9c532;
+  --green: #7db93b;
+  --sage: #cfe0d2;
+  --amber: #e5a323;
+  --gold: #f2c14e;
+  --orange: #e8872b;
+  --ivory: #fbf7ee;
+  --offwhite: #fffdf8;
+
+  /* light theme surfaces */
+  --bg: var(--ivory);
+  --bg-2: #f3eede;
+  --surface: var(--offwhite);
+  --surface-2: #ffffff;
+  --ink: #10302e;
+  --ink-2: #48605d;
+  --ink-3: #6e8380;
+  --line: rgba(16, 48, 46, 0.12);
+  --line-strong: rgba(16, 48, 46, 0.24);
+  --accent: var(--teal-deep);
+  --accent-soft: rgba(1, 161, 159, 0.1);
+  --btn-bg: var(--forest);
+  --btn-ink: var(--ivory);
+  --node-glow: rgba(229, 163, 35, 0.35);
+  --spot: rgba(1, 161, 159, 0.1);
+  --spot-2: rgba(229, 163, 35, 0.1);
+  --logo-plate: transparent;
+
+  /* typography */
+  --font-display: 'Fraunces Variable', 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-display: clamp(2.7rem, 7.2vw, 6.4rem);
+  --fs-h1: clamp(2.3rem, 5.4vw, 4.6rem);
+  --fs-h2: clamp(1.8rem, 3.6vw, 3.1rem);
+  --fs-h3: clamp(1.2rem, 1.8vw, 1.5rem);
+  --fs-lead: clamp(1.05rem, 1.5vw, 1.3rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.72rem;
+
+  /* spacing (8px rhythm) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --section: clamp(72px, 11vw, 150px);
+  --gutter: clamp(20px, 5vw, 64px);
+  --maxw: 1240px;
+
+  /* radius */
+  --r-sm: 10px;
+  --r-md: 18px;
+  --r-lg: 28px;
+  --r-pill: 999px;
+
+  /* shadows + glow */
+  --shadow-1: 0 1px 2px rgba(16, 48, 46, 0.06), 0 6px 18px rgba(16, 48, 46, 0.06);
+  --shadow-2: 0 2px 4px rgba(16, 48, 46, 0.06), 0 18px 44px rgba(16, 48, 46, 0.12);
+  --glow-teal: 0 0 0 1px rgba(1, 161, 159, 0.25), 0 14px 40px rgba(1, 161, 159, 0.18);
+  --glow-amber: 0 0 28px rgba(229, 163, 35, 0.45);
+
+  /* motion */
+  --d-fast: 160ms;
+  --d-base: 320ms;
+  --d-slow: 640ms;
+  --d-cine: 1100ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* layering */
+  --z-ambient: 0;
+  --z-content: 1;
+  --z-nav: 50;
+  --z-orb: 60;
+  --z-modal: 80;
+  --z-transition: 90;
+  --z-intro: 100;
+  --z-cursor: 110;
+
+  /* breakpoints (reference — CSS cannot read variables in @media)
+     mobile < 640px · tablet 640–959px · laptop 960–1279px · desktop 1280px+ */
+}
+
+[data-theme='dark'] {
+  --bg: #071f1e;
+  --bg-2: #0a2927;
+  --surface: #0e312f;
+  --surface-2: #123a37;
+  --ink: #eef4ea;
+  --ink-2: #b4c8c0;
+  --ink-3: #86a098;
+  --line: rgba(238, 244, 234, 0.12);
+  --line-strong: rgba(238, 244, 234, 0.26);
+  --accent: #5fd6cf;
+  --accent-soft: rgba(95, 214, 207, 0.12);
+  --btn-bg: #c9df55;
+  --btn-ink: #0a2927;
+  --node-glow: rgba(242, 193, 78, 0.5);
+  --spot: rgba(95, 214, 207, 0.12);
+  --spot-2: rgba(242, 193, 78, 0.1);
+  --logo-plate: #fbf7ee;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 18px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 2px 4px rgba(0, 0, 0, 0.3), 0 18px 44px rgba(0, 0, 0, 0.4);
+  --glow-teal: 0 0 0 1px rgba(95, 214, 207, 0.3), 0 14px 40px rgba(95, 214, 207, 0.14);
+}
