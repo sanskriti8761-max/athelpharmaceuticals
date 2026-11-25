@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athel Pharmaceutical — A Noble Effort Towards Good Health</title>
+    <meta name="description" content="Athel Pharmaceutical is a pharmaceutical trading company. Explore the product portfolio by name, composition and dosage form, and get in touch for business enquiries." />
+    <meta name="theme-color" content="#01a19f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Athel Pharmaceutical" />
+    <meta property="og:description" content="A noble effort towards good health. Product portfolio, composition explorer and business enquiries." />
+    <meta property="og:image" content="./og.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Apply the saved theme before first paint so there is no flash.
+      try { var t = localStorage.getItem('athel-theme'); if (t) document.documentElement.dataset.theme = t; else if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Athel Pharmaceutical — a pharmaceutical trading company. Please enable JavaScript to explore the product portfolio.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
